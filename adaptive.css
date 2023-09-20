@@ -1,0 +1,324 @@
+@media screen and (max-width: 429px) {
+  .welcome-section .container .section-items .section-introduction h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .last-remove {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services .container .section-items .services-cards {
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .services .container .section-items .services-cards .cards-item {
+    width: calc(50% - 20px);
+  }
+  .lets-make .container .section-items .section-item .section-introduction p {
+    max-width: 500px;
+  }
+  .team .container .section-items .team-card {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+  }
+  .team .container .section-items .team-card .section-item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .case-slider {
+    display: none !important;
+  }
+  .company-logos .container .section-items .section-item {
+    width: auto;
+  }
+  .testimonials .container .section-items .testimonials-slider {
+    padding-top: 84px;
+    padding-bottom: 68px;
+    overflow: hidden;
+  }
+  .testimonials .container .section-items .testimonials-slider .tns-outer .tns-ovh {
+    overflow: visible !important;
+  }
+  .testimonials .container .section-items .testimonials-slider .testimonials-slider-col .testimonials-slider-content {
+    gap: 62px;
+  }
+  .testimonials .container .section-items .testimonials-slider .testimonials-slider-col .testimonials-slider-content .testimonials-slider-text {
+    max-width: none;
+  }
+  .testimonials .container .section-items .testimonials-slider .testimonials-slider-col .testimonials-slider-content .testimonials-slider-text p {
+    font-size: 18px;
+    padding: 38px 50px;
+  }
+  .testimonials .container .section-items .testimonials-slider .testimonials-slider-col .testimonials-slider-content .testimonials-slider-person {
+    margin-bottom: 124px;
+  }
+  .contact .container .section-items .form-items {
+    flex-direction: row;
+    padding: 60px 100px 70px 80px;
+  }
+  .contact .container .section-items .form-items .section-form {
+    gap: 40px;
+    width: 60%;
+  }
+  .contact .container .section-items .form-items .section-form .form-btn {
+    gap: 35px;
+    justify-content: left;
+  }
+  .contact .container .section-items .form-items .section-form form {
+    gap: 25px;
+  }
+  .contact .container .section-items .form-items .section-form form .section-item input {
+    padding: 18px 30px;
+  }
+  .contact .container .section-items .form-items .section-form form .section-item textarea {
+    height: 190px;
+  }
+  .remove-btn {
+    display: none;
+  }
+  .our-working-process .container .section-items .accordion {
+    gap: 30px;
+  }
+  .our-working-process .container .section-items .accordion .accordion-item {
+    padding: 41px 60px;
+  }
+  .lets-make .container .section-items {
+    padding: 60px;
+  }
+  .lets-make .container .section-items .section-item {
+    gap: 26px;
+  }
+  .lets-make .container .section-items .section-item .section-btn {
+    max-width: 288px;
+  }
+  .lets-make .container .section-items .section-item .section-introduction {
+    gap: 26px;
+  }
+  .welcome-tel {
+    display: none;
+  }
+  .case-studies .container .section-items .section-introduction {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: left;
+  }
+  .case-studies .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 550px;
+  }
+  .our-working-process .container .section-items .section-introduction {
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+  }
+  .our-working-process .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 292px;
+  }
+  .team .container .section-items .section-introduction {
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+  }
+  .team .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 473px;
+  }
+  .testimonials .container .section-items .section-introduction {
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+  }
+  .testimonials .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 473px;
+  }
+  .contact .container .section-items .section-introduction {
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+  }
+  .contact .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 323px;
+  }
+  .tel-header {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .case-studies-items {
+    display: none !important;
+  }
+  .contact-illustration {
+    display: none;
+  }
+  .computer-header {
+    display: none;
+  }
+  .add-btn {
+    display: none;
+  }
+  .lets-make-picture {
+    display: none;
+  }
+  .welcome-computer {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header {
+    display: none;
+  }
+  .computer-footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tel-footer {
+    display: none !important;
+  }
+  .welcome-section {
+    padding-bottom: 70px;
+    padding-top: 196px;
+  }
+  .welcome-section .container .section-items .section-introduction h1 {
+    font-size: 60px;
+    max-width: 550px;
+  }
+  .welcome-section .container .section-items .section-introduction p {
+    font-size: 20px;
+    max-width: 500px;
+  }
+  .services {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+  .case-studies {
+    padding-top: 140px;
+  }
+  .case-studies .container .section-items {
+    gap: 85px;
+  }
+  .our-working-process {
+    padding-bottom: 140px;
+  }
+  .our-working-process .container .section-items {
+    gap: 80px;
+  }
+  .team {
+    padding-bottom: 100px;
+  }
+  .team .container .section-btn {
+    justify-content: right;
+  }
+  .team .container .section-btn button {
+    max-width: 269px;
+  }
+  .team .container .section-items {
+    gap: 85px;
+  }
+  .team .container .section-items .section-introduction {
+    justify-content: left;
+    gap: 40px;
+    flex-direction: row;
+    width: 100%;
+  }
+  .team .container .section-items .team-card .section-item {
+    width: calc(33.33% - 30px);
+    padding: 40px 35px;
+  }
+  .team .container .section-items .team-card .section-item .team-card .team-name p {
+    font-size: 18px;
+  }
+  .team .container .section-items .team-card .section-item .team-card .team-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .testimonials {
+    padding-bottom: 140px;
+  }
+  .testimonials .container .section-items {
+    gap: 85px;
+  }
+  .contact {
+    padding-bottom: 140px;
+  }
+  .contact .container .section-items {
+    gap: 85px;
+  }
+  .section-paragraph {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .section-header {
+    font-size: 40px;
+  }
+  .lets-make .container .section-items .section-box .section-item .section-introduction h2 {
+    font-size: 30px;
+  }
+  .lets-make .container .section-items .section-box .section-item .section-introduction p {
+    font-size: 18px;
+  }
+  .services .container .section-items .section-introduction {
+    flex-direction: row;
+    justify-content: left;
+    gap: 40px;
+  }
+  .services .container .section-items .section-introduction p {
+    text-align: left;
+    max-width: 580px;
+  }
+  .services .container .section-items {
+    gap: 85px;
+  }
+  .services .container .section-items .services-cards .cards-item {
+    max-width: 600px;
+  }
+  .services .container .section-items .services-cards .cards-item .card-box .card-introduction h4 {
+    font-size: 30px;
+  }
+  .case-studies .container .section-items .case-studies-items {
+    gap: 64px;
+  }
+  .case-studies .container .section-items .case-studies-items .section-item p {
+    line-height: normal;
+    font-size: 18px;
+  }
+  .contact .container .section-items .form-items .section-form .form-btn div label {
+    font-size: 18px;
+  }
+  .contact .container .section-items .form-items .section-form form .section-item label {
+    font-size: 18px;
+  }
+  .contact .container .section-items .form-items .section-form form .section-item input {
+    font-size: 18px;
+  }
+  .contact .container .section-items .form-items .section-form form .section-item textarea {
+    font-size: 18px;
+  }
+  .our-working-process .container .section-items .accordion .accordion-item .accordion-collapse .accordion-body {
+    font-size: 18px;
+  }
+  .our-working-process .container .section-items .accordion .accordion-item .accordion-collapse .accordion-body strong {
+    font-size: 18px;
+  }
+  .our-working-process .container .section-items .accordion .accordion-item .accordion-header .accordion-button span:first-child {
+    font-size: 60px;
+  }
+  .our-working-process .container .section-items .accordion .accordion-item .accordion-header .accordion-button span:last-child {
+    font-size: 30px;
+  }
+  .small-header {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */
