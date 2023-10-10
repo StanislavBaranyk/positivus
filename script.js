@@ -191,3 +191,42 @@ accordionBtnSix.addEventListener('click', () => {
 })
 
 
+let contactContactBtnOne = document.getElementById('say-hi');
+let contactContactBtnTwo = document.getElementById('get-quote');
+
+contactContactBtnOne.addEventListener('click', () => {
+    if (!contactContactBtnOne.classList.contains('active-form-btn')) {
+
+        contactContactBtnOne.classList.add('active-form-btn');
+
+        contactContactBtnTwo.classList.remove('active-form-btn')
+    }
+})
+
+contactContactBtnTwo.addEventListener('click', () => {
+    if (!contactContactBtnTwo.classList.contains('active-form-btn')) {
+
+        contactContactBtnTwo.classList.add('active-form-btn');
+
+        contactContactBtnOne.classList.remove('active-form-btn')
+    }
+})
+
+function checkWindowWidth() {
+    const windowWidth = window.innerWidth;
+    const breakpoint = 992; // Ширина, при якій акордеон буде відкритим
+    const btnItemOne = document.getElementById('btn-itemOne');
+
+    if (windowWidth >= breakpoint) {
+        // Виконуємо клік на кнопці акордеону, якщо ширина вікна більша або рівна breakpoint
+        btnItemOne.click();
+    }
+}
+
+// Викликаємо функцію при завантаженні сторінки
+window.addEventListener('load', checkWindowWidth);
+
+// Викликаємо функцію при зміні розміру вікна
+window.addEventListener('resize', checkWindowWidth);
+
+

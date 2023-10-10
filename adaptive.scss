@@ -99,7 +99,7 @@
       width: 60%;
 
 
-      .form-btn {
+      .contact-btn {
         gap: 35px;
         justify-content: left;
       }
@@ -118,6 +118,10 @@
         }
       }
     }
+  }
+
+  .contact .container .section-items .section-btn button {
+    max-width: none;
   }
 
   .remove-btn {
@@ -247,6 +251,10 @@
     display: none;
   }
 
+  .services .container .section-items .services-cards .cards-item .card-box .card-bottom .card-btn p {
+    display: none;
+  }
+
   .computer-footer {
     display: none;
   }
@@ -256,6 +264,11 @@
 
   .tel-footer {
     display: none !important;
+  }
+
+  header {
+    padding: 30px 0;
+    height: auto;
   }
 
   .welcome-section {
@@ -487,4 +500,10 @@
     display: none;
   }
 
+}
+
+@media screen and (min-width: 1400px){
+  header {
+    padding-top: 60px;
+  }
 }

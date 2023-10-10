@@ -67,7 +67,7 @@
     gap: 40px;
     width: 60%;
   }
-  .contact .container .section-items .form-items .section-form .form-btn {
+  .contact .container .section-items .form-items .section-form .contact-btn {
     gap: 35px;
     justify-content: left;
   }
@@ -79,6 +79,9 @@
   }
   .contact .container .section-items .form-items .section-form form .section-item textarea {
     height: 190px;
+  }
+  .contact .container .section-items .section-btn button {
+    max-width: none;
   }
   .remove-btn {
     display: none;
@@ -177,6 +180,9 @@
   header {
     display: none;
   }
+  .services .container .section-items .services-cards .cards-item .card-box .card-bottom .card-btn p {
+    display: none;
+  }
   .computer-footer {
     display: none;
   }
@@ -184,6 +190,10 @@
 @media screen and (min-width: 1200px) {
   .tel-footer {
     display: none !important;
+  }
+  header {
+    padding: 30px 0;
+    height: auto;
   }
   .welcome-section {
     padding-bottom: 70px;
@@ -318,6 +328,11 @@
   }
   .small-header {
     display: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    padding-top: 60px;
   }
 }
 
