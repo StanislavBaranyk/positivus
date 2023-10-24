@@ -373,12 +373,12 @@
 
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.5" r="20.5" fill="black"/>
-                                <path d="M11.2501 24.7009C10.5326 25.1151 10.2868 26.0325 10.701 26.75C11.1152 27.4674 12.0326 27.7132 12.7501 27.299L11.2501 24.7009ZM30.7695 16.3882C30.9839 15.588 30.509 14.7655 29.7088 14.5511L16.6688 11.057C15.8686 10.8426 15.0461 11.3175 14.8317 12.1177C14.6173 12.9179 15.0921 13.7404 15.8923 13.9548L27.4835 17.0606L24.3776 28.6517C24.1632 29.4519 24.6381 30.2744 25.4383 30.4889C26.2385 30.7033 27.061 30.2284 27.2754 29.4282L30.7695 16.3882ZM12.7501 27.299L30.0706 17.299L28.5706 14.7009L11.2501 24.7009L12.7501 27.299Z"
-                                      fill="#B9FF66"/>
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.5" r="20.5" fill="black"/>
+                                    <path d="M11.2501 24.7009C10.5326 25.1151 10.2868 26.0325 10.701 26.75C11.1152 27.4674 12.0326 27.7132 12.7501 27.299L11.2501 24.7009ZM30.7695 16.3882C30.9839 15.588 30.509 14.7655 29.7088 14.5511L16.6688 11.057C15.8686 10.8426 15.0461 11.3175 14.8317 12.1177C14.6173 12.9179 15.0921 13.7404 15.8923 13.9548L27.4835 17.0606L24.3776 28.6517C24.1632 29.4519 24.6381 30.2744 25.4383 30.4889C26.2385 30.7033 27.061 30.2284 27.2754 29.4282L30.7695 16.3882ZM12.7501 27.299L30.0706 17.299L28.5706 14.7009L11.2501 24.7009L12.7501 27.299Z"
+                                          fill="#B9FF66"/>
+                                </svg>
                                 <p class="section-paragraph">Learn more</p>
                             </div>
                             <div class="card-picture">
@@ -395,14 +395,14 @@
                         </div>
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.9706" r="20.5" fill="black"/>
-                                <path d="M11.2501 25.1715C10.5326 25.5857 10.2868 26.5031 10.701 27.2205C11.1152 27.938 12.0326 28.1838 12.7501 27.7696L11.2501 25.1715ZM30.7695 16.8588C30.9839 16.0586 30.509 15.2361 29.7088 15.0217L16.6688 11.5276C15.8686 11.3132 15.0461 11.7881 14.8317 12.5883C14.6173 13.3885 15.0921 14.211 15.8923 14.4254L27.4835 17.5312L24.3776 29.1223C24.1632 29.9225 24.6381 30.745 25.4383 30.9594C26.2385 31.1738 27.061 30.699 27.2754 29.8988L30.7695 16.8588ZM12.7501 27.7696L30.0706 17.7696L28.5706 15.1715L11.2501 25.1715L12.7501 27.7696Z"
-                                      fill="#B9FF66"/>
-                            </svg>
-                            <p class="section-paragraph">Learn more</p>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.9706" r="20.5" fill="black"/>
+                                    <path d="M11.2501 25.1715C10.5326 25.5857 10.2868 26.5031 10.701 27.2205C11.1152 27.938 12.0326 28.1838 12.7501 27.7696L11.2501 25.1715ZM30.7695 16.8588C30.9839 16.0586 30.509 15.2361 29.7088 15.0217L16.6688 11.5276C15.8686 11.3132 15.0461 11.7881 14.8317 12.5883C14.6173 13.3885 15.0921 14.211 15.8923 14.4254L27.4835 17.5312L24.3776 29.1223C24.1632 29.9225 24.6381 30.745 25.4383 30.9594C26.2385 31.1738 27.061 30.699 27.2754 29.8988L30.7695 16.8588ZM12.7501 27.7696L30.0706 17.7696L28.5706 15.1715L11.2501 25.1715L12.7501 27.7696Z"
+                                          fill="#B9FF66"/>
+                                </svg>
+                                <p class="section-paragraph">Learn more</p>
+                            </div>
                             <div class="card-picture">
                                 <img src="images/services-cards-picture/cards-picture2.png">
                             </div>
@@ -419,14 +419,14 @@
 
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.9707" r="20.5" fill="white"/>
-                                <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2207C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9596C26.2385 31.174 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
-                                      fill="black"/>
-                            </svg>
-                            <p class="section-paragraph">Learn more</p>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.9707" r="20.5" fill="white"/>
+                                    <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2207C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9596C26.2385 31.174 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
+                                          fill="black"/>
+                                </svg>
+                                <p class="section-paragraph">Learn more</p>
+                            </div>
                             <div class="card-picture">
                                 <img src="images/services-cards-picture/cards-picture3.png">
                             </div>
@@ -442,14 +442,14 @@
                         </div>
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.9707" r="20.5" fill="black"/>
-                                <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2206C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9595C26.2385 31.1739 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
-                                      fill="#B9FF66"/>
-                            </svg>
-                            <p class="section-paragraph">Learn more</p>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.9707" r="20.5" fill="black"/>
+                                    <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2206C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9595C26.2385 31.1739 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
+                                          fill="#B9FF66"/>
+                                </svg>
+                                <p class="section-paragraph">Learn more</p>
+                            </div>
                             <div class="card-picture">
                                 <img src="images/services-cards-picture/cards-picture4.png">
                             </div>
@@ -466,14 +466,14 @@
 
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.9706" r="20.5" fill="black"/>
-                                <path d="M11.2501 25.1715C10.5326 25.5857 10.2868 26.5031 10.701 27.2205C11.1152 27.938 12.0326 28.1838 12.7501 27.7696L11.2501 25.1715ZM30.7695 16.8588C30.9839 16.0586 30.509 15.2361 29.7088 15.0217L16.6688 11.5276C15.8686 11.3132 15.0461 11.7881 14.8317 12.5883C14.6173 13.3885 15.0921 14.211 15.8923 14.4254L27.4835 17.5312L24.3776 29.1223C24.1632 29.9225 24.6381 30.745 25.4383 30.9594C26.2385 31.1738 27.061 30.699 27.2754 29.8988L30.7695 16.8588ZM12.7501 27.7696L30.0706 17.7696L28.5706 15.1715L11.2501 25.1715L12.7501 27.7696Z"
-                                      fill="#B9FF66"/>
-                            </svg>
-                            <p class="section-paragraph">Learn more</p>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.9706" r="20.5" fill="black"/>
+                                    <path d="M11.2501 25.1715C10.5326 25.5857 10.2868 26.5031 10.701 27.2205C11.1152 27.938 12.0326 28.1838 12.7501 27.7696L11.2501 25.1715ZM30.7695 16.8588C30.9839 16.0586 30.509 15.2361 29.7088 15.0217L16.6688 11.5276C15.8686 11.3132 15.0461 11.7881 14.8317 12.5883C14.6173 13.3885 15.0921 14.211 15.8923 14.4254L27.4835 17.5312L24.3776 29.1223C24.1632 29.9225 24.6381 30.745 25.4383 30.9594C26.2385 31.1738 27.061 30.699 27.2754 29.8988L30.7695 16.8588ZM12.7501 27.7696L30.0706 17.7696L28.5706 15.1715L11.2501 25.1715L12.7501 27.7696Z"
+                                          fill="#B9FF66"/>
+                                </svg>
+                                <p class="section-paragraph">Learn more</p>
+                            </div>
                             <div class="card-picture">
                                 <img src="images/services-cards-picture/cards-picture5.png">
                             </div>
@@ -490,14 +490,14 @@
 
                         <div class="card-bottom">
                             <div class="card-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
-                                 fill="none">
-                                <circle cx="20.5" cy="20.9707" r="20.5" fill="white"/>
-                                <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2207C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9596C26.2385 31.174 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
-                                      fill="black"/>
-                            </svg>
-                            <p class="section-paragraph">Learn more</p>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42"
+                                     fill="none">
+                                    <circle cx="20.5" cy="20.9707" r="20.5" fill="white"/>
+                                    <path d="M11.2501 25.1716C10.5326 25.5858 10.2868 26.5032 10.701 27.2207C11.1152 27.9381 12.0326 28.1839 12.7501 27.7697L11.2501 25.1716ZM30.7695 16.8589C30.9839 16.0587 30.509 15.2362 29.7088 15.0218L16.6688 11.5277C15.8686 11.3133 15.0461 11.7882 14.8317 12.5884C14.6173 13.3886 15.0921 14.2111 15.8923 14.4255L27.4835 17.5313L24.3776 29.1224C24.1632 29.9226 24.6381 30.7451 25.4383 30.9596C26.2385 31.174 27.061 30.6991 27.2754 29.8989L30.7695 16.8589ZM12.7501 27.7697L30.0706 17.7697L28.5706 15.1716L11.2501 25.1716L12.7501 27.7697Z"
+                                          fill="black"/>
+                                </svg>
+                                <p class="section-paragraph">Learn more</p>
+                            </div>
                             <div class="card-picture">
                                 <img src="images/services-cards-picture/cards-picture6.png">
                             </div>
@@ -667,140 +667,85 @@
             </div>
 
             <div class="accordion" id="accordionExample">
-                <div id="accordion-itemOne" class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button id="btn-itemOne" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <span>01</span>
-                            <span>Consultation</span>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
+
+
+
+
+
+            <?php
+
+            $accordionText = "
                             <strong>This is the first item's accordion body.</strong> It is shown by default, until the
                             collapse plugin adds the appropriate classes that we use to style each element. These
                             classes control the overall appearance, as well as the showing and hiding via CSS
                             transitions. You can modify any of this with custom CSS or overriding our default variables.
                             It's also worth noting that just about any HTML can go within the
                             <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
+                        ";
 
-                <div id="accordion-itemTwo" class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button id="btn-itemTwo" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span>02</span>
-                            <span>Research and Strategy Development</span>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
 
-                <div id="accordion-itemThere" class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button id="btn-itemThere" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <span>03</span>
-                            <span>Implementation</span>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
+            $accordionItems = [
+                [
+                    'number' => '01',
+                    'header' => 'Consultation',
+                    'accordionText' => $accordionText,
+                ],
+                [
+                    'number' => '02',
+                    'header' => 'Research and Strategy Development',
+                    'accordionText' => $accordionText,
+                ],
+                [
+                    'number' => '03',
+                    'header' => 'Implementation',
+                    'accordionText' => $accordionText,
+                ],
+                [
+                    'number' => '04',
+                    'header' => 'Monitoring and Optimization',
+                    'accordionText' => $accordionText,
+                ],
+                [
+                    'number' => '05',
+                    'header' => 'Reporting and Communication',
+                    'accordionText' => $accordionText,
+                ],
+                [
+                    'number' => '06',
+                    'header' => 'Continual Improvement',
+                    'accordionText' => $accordionText,
+                ],
+            ];
+            foreach ($accordionItems as $key =>$accordionItem) {
 
-                <div id="accordion-itemFour" class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button id="btn-itemFour" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <span>04</span>
-                            <span>Monitoring and Optimization</span>
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
 
-                <div id="accordion-itemFive" class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button id="btn-itemFive" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <span>05</span>
-                            <span>Reporting and Communication</span>
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
 
-                <div id="accordion-itemSix" class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button id="btn-itemSix" class="accordion-button collapsed" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            <span>06</span>
-                            <span>Continual Improvement</span>
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
 
+              echo  '<div id="accordion-item' . $key . '" class="accordion-item">
+                <h2 class="accordion-header" id="heading' . $key . '">
+                    <button id="btn-item' . $key .'" class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse' . $key. '" aria-expanded="true" aria-controls="collapse' . $key. '">
+                        <span>' . $accordionItem['number'] .'</span>
+                        <span>'.  $accordionItem['header'] .'</span>
+                    </button>
+                </h2>
+                <div id="collapse' . $key . '" class="accordion-collapse collapse" aria-labelledby="heading' . $key .'"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">'.  $accordionItem['accordionText'] .'</div>
+                </div>
+            </div>';
+
+
+            }
+
+
+            ?>
 
             </div>
+
+
+
         </div>
 
     </div>
@@ -1045,8 +990,8 @@
                 <div class="section-form form-item">
                     <div class="contact-btn">
                         <div class="say-hi contact-btn-item">
-                        <div class="active-form-btn" id="say-hi"></div>
-                        <label for="say-hi">Say Hi</label>
+                            <div class="active-form-btn" id="say-hi"></div>
+                            <label for="say-hi">Say Hi</label>
                         </div>
                         <div class="get-quote contact-btn-item">
                             <div id="get-quote"></div>
