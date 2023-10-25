@@ -2,6 +2,30 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("Space_Grotesk/SpaceGrotesk-Light.ttf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("Space_Grotesk/SpaceGrotesk-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("Space_Grotesk/SpaceGrotesk-SemiBold.ttf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("Space_Grotesk/SpaceGrotesk-Bold.ttf") format("opentype");
+  font-weight: 300;
+}
+
 .container {
   max-width: 1280px;
   padding-right: 20px !important;

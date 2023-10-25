@@ -78,7 +78,7 @@
 <div class="small-header">
     <div class="container">
         <div class="section-items">
-            <a href="#" class="header-logo">
+            <a href="/" class="header-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <g clip-path="url(#clip0_690_101)">
                         <path d="M11.8058 3.63037L23.3508 0.229004L19.9821 11.8067L23.3508 23.3518L11.8058 19.9831L0.228027 23.3518L3.6294 11.8067L0.228027 0.229004L11.8058 3.63037Z"
@@ -126,7 +126,7 @@
     <div class="container">
 
         <div class="section-items">
-            <a href="#" class="header-logo">
+            <a href="/" class="header-logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <g clip-path="url(#clip0_690_101)">
                         <path d="M11.8058 3.63037L23.3508 0.229004L19.9821 11.8067L23.3508 23.3518L11.8058 19.9831L0.228027 23.3518L3.6294 11.8067L0.228027 0.229004L11.8058 3.63037Z"
