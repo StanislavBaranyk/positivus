@@ -22,42 +22,11 @@
 
 <?php
 
-
-
 include 'layots/header.php';
-
-include 'sections/welcome.php';
-
-include 'sections/company-logos.php';
-
-include 'sections/services.php';
-
-include 'sections/lets-make.php';
 
 include 'sections/case-studies.php';
 
-include 'sections/our-working-procces.php';
-
-include 'sections/team.php';
-
-include 'sections/testimonials.php';
-
-include 'sections/contact.php';
-
-include 'sections/company-logos.php';
-
 include 'layots/footer.php';
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
 

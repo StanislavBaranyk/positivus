@@ -7,7 +7,7 @@
                         <a href="#" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="/services.php" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Use Cases</a>
@@ -115,14 +115,21 @@
 
             <nav class="header-nav">
                 <ul>
+
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="/services.php" class="nav-link <?php if ($_SERVER['PHP_SELF'] == '/services.php') {
+                            echo 'active-class';
+                        } ?>">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Use Cases</a>
+                        <a href="/case-studies.php"
+                           class="nav-link  <?php if ($_SERVER['PHP_SELF'] == '/case-studies.php') {
+                               echo 'active-class';
+                           } ?>">Use Cases</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Pricing</a>
@@ -140,3 +147,8 @@
         </div>
     </div>
 </header>
+
+<?php
+
+
+?>

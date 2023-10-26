@@ -42,7 +42,7 @@
                         <a href="#" class="section-paragraph">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="section-paragraph">Services</a>
+                        <a href="/services.php" class="section-paragraph">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="section-paragraph">Use Cases</a>
@@ -149,7 +149,7 @@
                                 <a href="#">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Services</a>
+                                <a href="/services.php">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#">Use Cases</a>
