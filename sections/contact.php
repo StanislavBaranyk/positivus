@@ -9,33 +9,40 @@
 
             <div class="form-items">
                 <div class="section-form form-item">
-                    <div class="contact-btn">
-                        <div class="say-hi contact-btn-item">
-                            <div class="active-form-btn" id="say-hi"></div>
-                            <label for="say-hi">Say Hi</label>
+                    <form  action="/action.php" class="contact-form" method="post">
+                        <div class="contact-btn">
+                            <div class="contact-btn-box">
+                                <input type="radio" checked id="say-hi" name="radio" value="say-hi">
+                                <label class="circle-active" for="say-hi"></label>
+                                <label for="get-a-quote">Say Hi</label>
+                            </div>
+                            <div class="contact-btn-box">
+                                <input type="radio" id="get-a-quote" name="radio" value="get-a-quote">
+                                <label class="circle-active" for="get-a-quote"></label>
+                                <label for="get-a-quote">Get a Quote</label>
+                            </div>
                         </div>
-                        <div class="get-quote contact-btn-item">
-                            <div id="get-quote"></div>
-                            <label for="get-quote">Get a Quote</label>
-                        </div>
-                    </div>
-                    <form>
+
+                        <div class="contact-item">
                         <div class="name section-item">
-                            <label for="name">Name</label>
-                            <input type="text" placeholder="Name" id="name">
+                            <label for="contact-name">Name</label>
+                            <input  type="text" placeholder="Name" name="name" id="contact-name">
                         </div>
                         <div class="email section-item">
                             <label for="email">Email*</label>
-                            <input type="text" placeholder="Name" id="email">
+                            <input type="text" placeholder="Email" name="email" id="contact-email">
                         </div>
                         <div class="message section-item">
-                            <label for="message">Message</label>
-                            <textarea id="message" placeholder="Message">Message</textarea>
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" placeholder="Message"></textarea>
+                        </div>
+                        </div>
+
+                        <div class="add-btn section-btn">
+                            <button type="submit" id="contact-btn">Send Message</button>
                         </div>
                     </form>
-                    <div class="add-btn section-btn">
-                        <button type="button">Send Message</button>
-                    </div>
+
 
                 </div>
                 <img class="contact-illustration" src="images/contact/Slice%201.png">

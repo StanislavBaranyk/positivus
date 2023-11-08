@@ -73,28 +73,6 @@ smallNavActivated.addEventListener('click', () => {
     }
 })
 
-
-let contactContactBtnOne = document.getElementById('say-hi');
-let contactContactBtnTwo = document.getElementById('get-quote');
-
-contactContactBtnOne.addEventListener('click', () => {
-    if (!contactContactBtnOne.classList.contains('active-form-btn')) {
-
-        contactContactBtnOne.classList.add('active-form-btn');
-
-        contactContactBtnTwo.classList.remove('active-form-btn')
-    }
-})
-
-contactContactBtnTwo.addEventListener('click', () => {
-    if (!contactContactBtnTwo.classList.contains('active-form-btn')) {
-
-        contactContactBtnTwo.classList.add('active-form-btn');
-
-        contactContactBtnOne.classList.remove('active-form-btn')
-    }
-})
-
 function checkWindowWidth() {
     const windowWidth = window.innerWidth;
     const breakpoint = 992; // Ширина, при якій акордеон буде відкритим
@@ -125,8 +103,47 @@ accordionCollapses.forEach(accordionCollapse => {
 })
 
 
+let contactMessage = document.getElementById('contact-message');
+let contactName = document.getElementById('contact-name');
+let contactEmail = document.getElementById('contact-email');
+
+let contactBtn = document.getElementById('contact-btn');
+
+contactBtn.addEventListener('click', event => {
+    event.preventDefault();
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'http://positivusphp.local/action.php');
+
+    let formData = new FormData(event.target.closest('.contact-form'));
+
+    xhr.send(formData);
 
 
+    xhr.onload = (ev) => {
+        if (xhr.status != 200) {
+            alert('Error: ' + xhr.status)
+        } else if (xhr.status === 500) {
+            alert('Server Error!');
+        } else {
+
+            let response = xhr.response;
+            let phpBox = document.createElement('div');
+            phpBox.classList.add('add-user-information');
+
+            phpBox.innerHTML = response;
+
+            let contactItem = document.querySelector('.contact-item');
+
+            contactItem.appendChild(phpBox);
+        }
+
+    }
+
+
+
+})
 
 
 
