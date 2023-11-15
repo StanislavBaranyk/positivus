@@ -44,7 +44,6 @@ include 'sections/testimonials.php';
 
 include 'sections/contact.php';
 
-include 'sections/company-logos.php';
 
 include 'layots/footer.php';
 

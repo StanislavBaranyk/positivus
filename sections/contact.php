@@ -10,6 +10,7 @@
             <div class="form-items">
                 <div class="section-form form-item">
                     <form  action="/action.php" class="contact-form" method="post">
+                        <div class="form-box">
                         <div class="contact-btn">
                             <div class="contact-btn-box">
                                 <input type="radio" checked id="say-hi" name="radio" value="say-hi">
@@ -37,8 +38,10 @@
                             <textarea id="contact-message" name="message" placeholder="Message"></textarea>
                         </div>
                         </div>
+                        </div>
 
-                        <div class="add-btn section-btn">
+
+                        <div class="section-btn">
                             <button type="submit" id="contact-btn">Send Message</button>
                         </div>
                     </form>
@@ -48,9 +51,6 @@
                 <img class="contact-illustration" src="images/contact/Slice%201.png">
             </div>
 
-            <div class=" remove-btn section-btn">
-                <button type="button">Send Message</button>
-            </div>
         </div>
     </div>
 </section>
