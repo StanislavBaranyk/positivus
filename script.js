@@ -106,10 +106,11 @@ accordionCollapses.forEach(accordionCollapse => {
 let contactMessage = document.getElementById('contact-message');
 let contactName = document.getElementById('contact-name');
 let contactEmail = document.getElementById('contact-email');
-
 let contactBtn = document.getElementById('contact-btn');
 
 contactBtn.addEventListener('click', event => {
+
+
     event.preventDefault();
 
     const xhr = new XMLHttpRequest();
@@ -120,27 +121,38 @@ contactBtn.addEventListener('click', event => {
 
     xhr.send(formData);
 
+    xhr.onload = (e) => {
 
-    xhr.onload = (ev) => {
-        if (xhr.status != 200) {
-            alert('Error: ' + xhr.status)
-        } else if (xhr.status === 500) {
-            alert('Server Error!');
-        } else {
 
-            let response = xhr.response;
+
+        let json = xhr.response;
+        let response = JSON.parse(json);
+        console.log(response.responseText.length);
+
+
+
+    if (xhr.status !== 200) {
+        alert('Server Error');
+    } else  {
+
+        if (response.status === true) {
+            alert(response.message);
+            
             let phpBox = document.createElement('div');
             phpBox.classList.add('add-user-information');
 
-            phpBox.innerHTML = response;
+           phpBox.innerHTML = response.responseText;
 
             let contactItem = document.querySelector('.contact-item');
 
             contactItem.appendChild(phpBox);
+
+        } else  {
+            alert(response.message);
         }
 
     }
-
+    }
 
 
 })

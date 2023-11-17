@@ -92,6 +92,8 @@
   .contact .container .section-items .form-items {
     flex-direction: row;
     padding: 60px 100px 70px 80px;
+    background: #F3F3F3;
+    border-radius: 45px;
 
 
     .section-form {
@@ -104,17 +106,29 @@
         justify-content: left;
       }
 
-      form {
+      .contact-form {
         gap: 25px;
 
-        .section-item {
-          input {
-            padding: 18px 30px;
-          }
+        .form-box {
+          padding: 0 0;
 
-          textarea {
-            height: 190px;
+          .contact-item {
+
+            .section-item {
+              input {
+                padding: 18px 30px;
+              }
+
+              textarea {
+                height: 190px;
+                padding: 18px 30px;
+              }
+            }
           }
+        }
+
+        .section-btn {
+          padding: 0 0 ;
         }
       }
     }
@@ -237,8 +251,6 @@
   }
 
 
-
-
 }
 
 
@@ -281,6 +293,7 @@
             font-size: 60px;
             max-width: 550px;
           }
+
           p {
             font-size: 20px;
             max-width: 500px;
@@ -419,25 +432,26 @@
 
   .services .container .section-items {
     gap: 85px;
+
     .services-cards {
 
 
-    .cards-item {
-      max-width: 600px;
+      .cards-item {
+        max-width: 600px;
 
 
-      .card-box {
+        .card-box {
 
 
-        .card-introduction {
-          h4 {
-            font-size: 30px;
+          .card-introduction {
+            h4 {
+              font-size: 30px;
+            }
           }
         }
       }
     }
   }
-}
 
   .case-studies .container .section-items .case-studies-items {
     gap: 64px;
@@ -479,6 +493,7 @@
 
       .accordion-body {
         font-size: 18px;
+
         strong {
           font-size: 18px;
         }
@@ -499,7 +514,7 @@
 
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
   header {
     padding-top: 60px;
   }

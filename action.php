@@ -1,41 +1,36 @@
 <?php
-
-function name($name)
+function dataCheck($name, $email, $message)
 {
+    $response = [
+        'status' => false,
+        'message' => '',
+        'responseText' => [],
+    ];
 
-    if (strlen($name) === 0) {
-        echo '<p>Please enter name </p><br>';
+    if (strlen($name) == 0 || strlen($email) == 0 || strlen($message) == 0) {
+        $response['message'] = 'Some data is missing';
 
     } else {
-        echo '<p>Hello: ' . $name . '</p> <br>';
+        $response['status'] = true;
+        $response['message'] = "$name, thank you";
+        $response['responseText'] = '<p>Hello: ' . $name . '</p> <br>
+             <p>You are email: ' . $email . '</p><br>
+            <p>You are comment: ' . $message . '</p><br>';
 
     }
 
+    echo json_encode($response);
 }
 
-name($_POST['name']);
+dataCheck($_POST['name'], $_POST['email'], $_POST['message']);
 
-function email($email)
-{
-    if (strlen($email) === 0) {
-        echo '<p>Please enter email </p><br>';
-    } else {
-        echo '<p>You are email: ' . $email . '</p><br>';
-    }
-}
 
-email($_POST['email']);
 
-function message($message) {
+//echo '<p>Hello: ' . $name . '</p> <br>';
 
-    if (strlen($message) === 0) {
+//echo '<p>You are email: ' . $email . '</p><br>';
 
-    }
-    else {
-        echo '<p>You are comment: ' . $_POST['message'] . '<p></p><br>';
-    }
-}
+//echo '<p>You are comment: ' . $_POST['message'] . '<p></p><br>';
 
-message($_POST['message']);
 
 

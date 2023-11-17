@@ -62,6 +62,8 @@
   .contact .container .section-items .form-items {
     flex-direction: row;
     padding: 60px 100px 70px 80px;
+    background: #F3F3F3;
+    border-radius: 45px;
   }
   .contact .container .section-items .form-items .section-form {
     gap: 40px;
@@ -71,20 +73,24 @@
     gap: 35px;
     justify-content: left;
   }
-  .contact .container .section-items .form-items .section-form form {
+  .contact .container .section-items .form-items .section-form .contact-form {
     gap: 25px;
   }
-  .contact .container .section-items .form-items .section-form form .section-item input {
+  .contact .container .section-items .form-items .section-form .contact-form .form-box {
+    padding: 0 0;
+  }
+  .contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item input {
     padding: 18px 30px;
   }
-  .contact .container .section-items .form-items .section-form form .section-item textarea {
+  .contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item textarea {
     height: 190px;
+    padding: 18px 30px;
+  }
+  .contact .container .section-items .form-items .section-form .contact-form .section-btn {
+    padding: 0 0;
   }
   .contact .container .section-items .section-btn button {
     max-width: none;
-  }
-  .remove-btn {
-    display: none;
   }
   .our-working-process .container .section-items .accordion {
     gap: 30px;
@@ -164,9 +170,6 @@
     display: none;
   }
   .computer-header {
-    display: none;
-  }
-  .add-btn {
     display: none;
   }
   .lets-make-picture {

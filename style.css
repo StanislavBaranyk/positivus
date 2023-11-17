@@ -887,12 +887,6 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   white-space: nowrap;
 }
 .contact .container .section-items .form-items {
-  padding: 40px 0;
-  border-radius: 45px;
-  background: #F3F3F3;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
   position: relative;
 }
 .contact .container .section-items .form-items img {
@@ -904,36 +898,43 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding: 0 30px;
 }
 .contact .container .section-items .form-items .section-form .contact-form {
   display: flex;
   flex-direction: column;
   gap: 36px;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn {
+.contact .container .section-items .form-items .section-form .contact-form .form-box {
+  padding: 40px 30px;
+  border-radius: 45px;
+  background: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 35px;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn .contact-btn-box {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn .contact-btn-box {
   display: flex;
   flex-direction: row;
   gap: 14px;
   align-items: center;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn .contact-btn-box label {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn .contact-btn-box label {
   color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn .contact-btn-box input[type=radio] {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn .contact-btn-box input[type=radio] {
   display: none;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn .contact-btn-box .circle-active {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn .contact-btn-box .circle-active {
   width: 28px;
   height: 28px;
   border: 1px solid black;
@@ -941,7 +942,7 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   display: inline-block;
   position: relative;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-btn .contact-btn-box input[type=radio]:checked + .circle-active:before {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-btn .contact-btn-box input[type=radio]:checked + .circle-active:before {
   position: absolute;
   background-color: #B9FF66;
   border: 1px solid #1CA92E;
@@ -953,25 +954,25 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   border: none;
   content: "";
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-item {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-item .section-item {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-item .section-item label {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item label {
   color: #000;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-item .section-item input {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item input {
   width: 100%;
   padding: 18px 20px;
   border-radius: 14px;
@@ -983,7 +984,7 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   font-weight: 400;
   line-height: 150%;
 }
-.contact .container .section-items .form-items .section-form .contact-form .contact-item .section-item textarea {
+.contact .container .section-items .form-items .section-form .contact-form .form-box .contact-item .section-item textarea {
   width: 100%;
   padding: 18px 20px;
   border-radius: 14px;
@@ -995,6 +996,9 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+.contact .container .section-items .form-items .section-form .contact-form .section-btn {
+  padding: 0 30px;
 }
 
 .computer-footer .container .section-items {

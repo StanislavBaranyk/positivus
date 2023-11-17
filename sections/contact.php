@@ -9,7 +9,7 @@
 
             <div class="form-items">
                 <div class="section-form form-item">
-                    <form  action="/action.php" class="contact-form" method="post">
+                    <form  action="/action.php" id="contact-form" class="contact-form" method="post">
                         <div class="form-box">
                         <div class="contact-btn">
                             <div class="contact-btn-box">
