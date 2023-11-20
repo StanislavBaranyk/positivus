@@ -115,7 +115,7 @@ contactBtn.addEventListener('click', event => {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'http://positivusphp.local/action.php');
+    xhr.open('POST', '/action.php');
 
     let formData = new FormData(event.target.closest('.contact-form'));
 
