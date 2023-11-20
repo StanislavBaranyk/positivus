@@ -27,15 +27,15 @@
                         <div class="contact-item">
                         <div class="name section-item">
                             <label for="contact-name">Name</label>
-                            <input  type="text" placeholder="Name" name="name" id="contact-name">
+                            <input  type="text" placeholder="Name" class="contact-input" required name="name"  id="contact-name">
                         </div>
                         <div class="email section-item">
                             <label for="email">Email*</label>
-                            <input type="text" placeholder="Email" name="email" id="contact-email">
+                            <input type="email" placeholder="Email" class="contact-input" required  name="email" id="contact-email">
                         </div>
                         <div class="message section-item">
                             <label for="contact-message">Message</label>
-                            <textarea id="contact-message" name="message" placeholder="Message"></textarea>
+                            <textarea id="contact-message"  name="message" class="contact-input" required placeholder="Message"></textarea>
                         </div>
                         </div>
                         </div>

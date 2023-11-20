@@ -113,49 +113,65 @@ contactBtn.addEventListener('click', event => {
 
     event.preventDefault();
 
-    const xhr = new XMLHttpRequest();
+    let contactInputs = document.querySelectorAll('.contact-input');
 
-    xhr.open('POST', '/action.php');
+    contactInputs.forEach((contactInput) => {
+            if (contactInput.checkValidity() !== true) {
 
-    let formData = new FormData(event.target.closest('.contact-form'));
-
-    xhr.send(formData);
-
-    xhr.onload = (e) => {
-
-
-
-        let json = xhr.response;
-        let response = JSON.parse(json);
-        console.log(response.responseText.length);
+                contactInput.classList.add('border', 'border-danger');
+            } else {
+                contactInput.classList.remove('border', 'border-danger');
+                if (!contactInput.classList.contains('border border-danger')) {
 
 
 
-    if (xhr.status !== 200) {
-        alert('Server Error');
-    } else  {
+                    const xhr = new XMLHttpRequest();
 
-        if (response.status === true) {
-            alert(response.message);
-            
-            let phpBox = document.createElement('div');
-            phpBox.classList.add('add-user-information');
+                    xhr.open('POST', '/action.php');
 
-           phpBox.innerHTML = response.responseText;
+                    let formData = new FormData(event.target.closest('.contact-form'));
 
-            let contactItem = document.querySelector('.contact-item');
+                    xhr.send(formData);
 
-            contactItem.appendChild(phpBox);
+                    xhr.onload = (e) => {
 
-        } else  {
-            alert(response.message);
+
+
+                        let json = xhr.response;
+                        let response = JSON.parse(json);
+                        console.log(response.responseText);
+
+
+
+                        if (xhr.status !== 200) {
+                            alert('Server Error');
+                        } else  {
+
+
+                            if (response.status === true) {
+
+
+                                let phpBox = document.createElement('div');
+                                phpBox.classList.add('add-user-information');
+
+                                phpBox.innerHTML = response.responseText;
+
+                                let contactItem = document.querySelector('.contact-item');
+
+                                contactItem.appendChild(phpBox);
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
         }
-
-    }
-    }
-
+    )
 
 })
+
 
 
 
