@@ -115,62 +115,109 @@ contactBtn.addEventListener('click', event => {
 
     let contactInputs = document.querySelectorAll('.contact-input');
 
+    const xhr = new XMLHttpRequest();
+
+
+    let formData = new FormData(event.target.closest('.contact-form'));
+
     contactInputs.forEach((contactInput) => {
+
             if (contactInput.checkValidity() !== true) {
-
                 contactInput.classList.add('border', 'border-danger');
-            } else {
+
+            } else if (event.target.closest('.contact-form').reportValidity()) {
                 contactInput.classList.remove('border', 'border-danger');
-                if (!contactInput.classList.contains('border border-danger')) {
+
+                xhr.open('POST', '/action.php');
+                xhr.send(formData);
+
+                xhr.onload = (e) => {
 
 
-
-                    const xhr = new XMLHttpRequest();
-
-                    xhr.open('POST', '/action.php');
-
-                    let formData = new FormData(event.target.closest('.contact-form'));
-
-                    xhr.send(formData);
-
-                    xhr.onload = (e) => {
+                    let json = xhr.response;
+                    let response = JSON.parse(json);
+                    console.log(response.responseText);
 
 
-
-                        let json = xhr.response;
-                        let response = JSON.parse(json);
-                        console.log(response.responseText);
-
+                    if (xhr.status !== 200) {
+                        alert('Server Error');
+                    } else {
 
 
-                        if (xhr.status !== 200) {
-                            alert('Server Error');
-                        } else  {
+                        if (response.status === true) {
+
+                            let contactForm = document.querySelector('.contact-form');
+                            contactForm.reset();
 
 
-                            if (response.status === true) {
+                            let phpBox = document.createElement('div');
+                            phpBox.classList.add('add-user-information');
 
+                            phpBox.innerHTML = response.responseText;
 
-                                let phpBox = document.createElement('div');
-                                phpBox.classList.add('add-user-information');
+                            let contactItem = document.querySelector('.contact-item');
 
-                                phpBox.innerHTML = response.responseText;
+                            contactItem.appendChild(phpBox);
 
-                                let contactItem = document.querySelector('.contact-item');
-
-                                contactItem.appendChild(phpBox);
-
-                            }
-
+                            setTimeout(() => {
+                                phpBox.remove();
+                            }, 3000);
                         }
-                    }
 
+                    }
                 }
+
             }
         }
     )
 
 })
+
+
+// const xhr = new XMLHttpRequest();
+//
+// xhr.open('POST', '/action.php');
+//
+// let formData = new FormData(event.target.closest('.contact-form'));
+//
+// xhr.send(formData);
+//
+// xhr.onload = (e) => {
+//
+//
+//     let json = xhr.response;
+//     let response = JSON.parse(json);
+//     console.log(response.responseText);
+//
+//
+//     if (xhr.status !== 200) {
+//         alert('Server Error');
+//     }
+//     else {
+//
+//
+//         if (response.status === true) {
+//
+//             let contactForm = document.querySelector('.contact-form');
+//             contactForm.reset();
+//
+//
+//             let phpBox = document.createElement('div');
+//             phpBox.classList.add('add-user-information');
+//
+//             phpBox.innerHTML = response.responseText;
+//
+//             let contactItem = document.querySelector('.contact-item');
+//
+//             contactItem.appendChild(phpBox);
+//
+//             setTimeout(() => {
+//                 phpBox.remove();
+//             }, 3000);
+//         }
+//
+//     }
+// }
 
 
 
