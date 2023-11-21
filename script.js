@@ -109,14 +109,11 @@ let contactEmail = document.getElementById('contact-email');
 let contactBtn = document.getElementById('contact-btn');
 
 contactBtn.addEventListener('click', event => {
-
-
     event.preventDefault();
 
     let contactInputs = document.querySelectorAll('.contact-input');
 
     const xhr = new XMLHttpRequest();
-
 
     let formData = new FormData(event.target.closest('.contact-form'));
 
@@ -125,14 +122,17 @@ contactBtn.addEventListener('click', event => {
             if (contactInput.checkValidity() !== true) {
                 contactInput.classList.add('border', 'border-danger');
 
-            } else if (event.target.closest('.contact-form').reportValidity()) {
-                contactInput.classList.remove('border', 'border-danger');
+                setTimeout(() => {
+                    contactInput.classList.remove( 'border', 'border-danger');
+                }, 3000);
+
+            }  else if (event.target.closest('.contact-form').reportValidity()) {
+
 
                 xhr.open('POST', '/action.php');
                 xhr.send(formData);
 
                 xhr.onload = (e) => {
-
 
                     let json = xhr.response;
                     let response = JSON.parse(json);
@@ -143,20 +143,16 @@ contactBtn.addEventListener('click', event => {
                         alert('Server Error');
                     } else {
 
-
                         if (response.status === true) {
 
                             let contactForm = document.querySelector('.contact-form');
                             contactForm.reset();
 
-
                             let phpBox = document.createElement('div');
                             phpBox.classList.add('add-user-information');
-
                             phpBox.innerHTML = response.responseText;
 
                             let contactItem = document.querySelector('.contact-item');
-
                             contactItem.appendChild(phpBox);
 
                             setTimeout(() => {
