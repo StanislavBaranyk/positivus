@@ -1003,123 +1003,129 @@ header .container .section-items .header-nav ul .nav-item .section-btn button {
 
 footer {
   background: #191A23;
-}
-footer .container {
   padding-top: 50px;
   padding-bottom: 30px;
 }
 footer .container .section-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 37px;
 }
-footer .container .section-items .footer-top {
+footer .container .section-items .footer-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 37px;
 }
-footer .container .section-items .footer-top .footer-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 37px;
-}
-footer .container .section-items .footer-top .footer-header .header-logo a {
+footer .container .section-items .footer-header .header-logo {
   display: flex;
   flex-direction: row;
-  gap: 8px;
   align-items: center;
-  text-decoration: none;
+  gap: 8px;
+  margin-bottom: 37px;
 }
-footer .container .section-items .footer-top .footer-header .header-logo a svg:first-child {
-  width: 23px;
+footer .container .section-items .footer-header .header-logo svg:first-child {
   height: 23px;
+  width: 23px;
 }
-footer .container .section-items .footer-top .footer-header .header-logo a svg:last-child {
+footer .container .section-items .footer-header .header-logo svg:last-child {
   height: 19px;
+  width: 110px;
 }
-footer .container .section-items .footer-top .footer-header .footer-nav ul {
+footer .container .section-items .footer-header .footer-nav ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  margin: 0;
 }
-footer .container .section-items .footer-top .footer-header .footer-nav ul li .nav-link {
-  color: #FFFFFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+footer .container .section-items .footer-header .footer-nav ul .nav-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+footer .container .section-items .footer-header .footer-nav ul .nav-item {
   text-align: center;
 }
-footer .container .section-items .footer-top .footer-contact {
+footer .container .section-items .footer-header .footer-nav ul .nav-item .nav-link {
+  color: #FFFFFF;
+}
+footer .container .section-items .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+footer .container .section-items .footer-contact .footer-contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 37px;
 }
-footer .container .section-items .footer-top .footer-contact .footer-contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 37px;
-}
-footer .container .section-items .footer-top .footer-contact .footer-contact-info h5 {
+footer .container .section-items .footer-contact .footer-contact-info h5 {
   font-size: 18px;
 }
-footer .container .section-items .footer-top .footer-contact .footer-contact-info .list-items {
+footer .container .section-items .footer-contact .footer-contact-info .list-items {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  margin: 0;
 }
-footer .container .section-items .footer-top .footer-contact .footer-contact-info .list-items .list-item .section-paragraph {
-  text-align: center;
+footer .container .section-items .footer-contact .footer-contact-info .list-items .list-item {
+  margin-bottom: 15px;
+}
+footer .container .section-items .footer-contact .footer-contact-info .list-items .list-item .section-paragraph {
   color: #FFFFFF;
+  text-align: center;
 }
-footer .container .section-items .footer-top .footer-contact .footer-form {
+footer .container .section-items .footer-contact .footer-contact-form {
   border-radius: 14px;
   background: #292A32;
-  display: flex;
   padding: 30px;
-  flex-direction: column;
-  gap: 22px;
-}
-footer .container .section-items .footer-top .footer-contact .footer-form input {
-  border-radius: 14px;
-  border: 1px solid #FFF;
-  width: 100%;
-  padding: 21px 25px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+}
+footer .container .section-items .footer-contact .footer-contact-form input {
   background: none;
+  border-radius: 14px;
+  border: 1px solid white;
+  padding: 21px 25px;
+  margin-bottom: 22px;
+  max-width: 330px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+footer .container .section-items .footer-contact .footer-contact-form .section-btn {
   max-width: 330px;
   width: 100%;
 }
-footer .container .section-items .footer-top .footer-contact .footer-form button {
+footer .container .section-items .footer-contact .footer-contact-form .section-btn button {
+  font-size: 20px;
+  color: black;
   background: #B9FF66;
   border-radius: 14px;
+  width: 100%;
+  border: none;
+  height: 68px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-width: 330px;
+}
+footer .container .section-items .footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .container .section-items .footer-lines {
   width: 100%;
-  font-size: 20px;
-  height: 68px;
+  height: 1px;
+  background: #FFFFFF;
+}
+footer .container .section-items .footer-bottom {
+  text-align: center;
+}
+footer .container .section-items .footer-bottom p:first-child {
+  margin-bottom: 15px;
+}
+footer .container .section-items .footer-bottom p {
+  color: #FFFFFF;
 }
 
 .overflow-h {

@@ -9,6 +9,14 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .footer-contact-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-contact-form input {
+    margin-bottom: 0;
+  }
   .services .container .section-items .services-cards {
     gap: 40px;
     flex-wrap: wrap;
