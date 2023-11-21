@@ -186,14 +186,8 @@
   .services .container .section-items .services-cards .cards-item .card-box .card-bottom .card-btn p {
     display: none;
   }
-  .computer-footer {
-    display: none;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .tel-footer {
-    display: none !important;
-  }
   header {
     padding: 30px 0;
     height: auto;

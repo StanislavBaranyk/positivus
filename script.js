@@ -157,7 +157,7 @@ contactBtn.addEventListener('click', event => {
 
                             setTimeout(() => {
                                 phpBox.remove();
-                            }, 3000);
+                            }, 5000);
                         }
 
                     }
