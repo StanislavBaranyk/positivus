@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
+        <div class="footer-box">
         <div class="section-items">
-
             <div class="footer-header">
                 <a class="header-logo" href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -61,10 +61,10 @@
                         </li>
                     </ul>
                 </div>
-                <form class="footer-contact-form">
-                    <input type="email" required placeholder="Email">
+                <form class="footer-contact-form" id="footer-form" action="/action-footer.php" method="post">
+                    <input id="footer-email" name="email" type="email" required placeholder="Email">
                     <div class="section-btn">
-                    <button type="button">Subscribe to news</button>
+                    <button id="footer-form-btn" type="submit">Subscribe to news</button>
                     </div>
                 </form>
             </div>
@@ -87,8 +87,9 @@
             <div class="footer-lines"></div>
             <div class="footer-bottom">
                 <p class="section-paragraph">© 2023 Positivus. All Rights Reserved.</p>
-                <p class="section-paragraph">Privacy Policy</p>
+                <a class="section-paragraph">Privacy Policy</a>
             </div>
+        </div>
         </div>
     </div>
 </footer>

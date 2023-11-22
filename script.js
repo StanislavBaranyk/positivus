@@ -170,6 +170,44 @@ contactBtn.addEventListener('click', event => {
 })
 
 
+let footerFormEmail = document.getElementById('footer-email');
+let footerFormBtn = document.getElementById('footer-form-btn');
+
+footerFormBtn.addEventListener('click', (e)=> {
+    e.preventDefault();
+
+    const xhr = new XMLHttpRequest();
+
+
+    if (footerFormEmail.checkValidity()) {
+        xhr.open('POST', '/action-footer.php');
+        let formData = new FormData(e.target.closest('.footer-contact-form'));
+        xhr.send(formData);
+
+        xhr.onload = (e) => {
+            if (xhr.status !== 200) {
+                alert('Error Server')
+            }
+            else {
+                let response = JSON.parse(xhr.response);
+                console.log(response);
+
+                alert(response.responseText);
+            }
+        }
+    } else {
+        footerFormEmail.classList.add('border', 'border-danger');
+
+        setTimeout(() => {
+            footerFormEmail.classList.remove( 'border', 'border-danger');
+        }, 3000);
+    }
+
+
+
+} )
+
+
 // const xhr = new XMLHttpRequest();
 //
 // xhr.open('POST', '/action.php');

@@ -13,6 +13,7 @@ function dataCheck($name, $email, $message)
         $response['responseText'] = '<p>Hello: ' . $name . ', we get your data</p> <br>
              <p>You are email: ' . $email . '</p><br>
             <p>You are comment: ' . $message . '</p><br>';
+
     }
 
     echo json_encode($response);
