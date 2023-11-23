@@ -214,14 +214,22 @@ let lastScroll = 0;
 let checkClassHide = () =>  header.classList.contains('hide');
 
 window.addEventListener('scroll', (e) => {
-    if (scrollPosition() > lastScroll && !checkClassHide() && scrollPosition() > 500) {
+    if (scrollPosition() > lastScroll && !checkClassHide()) {
 
-        console.log('down')
-        header.classList.add('hide');
+        if (scrollPosition() > 102) {
+
+            console.log('down')
+            header.classList.add('hide');
+        }
+
 
     } else if (scrollPosition() < lastScroll && checkClassHide()) {
         header.classList.remove('hide');
         console.log('up')
+
+        if (!header.classList.contains('hide')) {
+            header.style.position = 'fixed';
+        }
     }
     lastScroll = scrollPosition();
 })
