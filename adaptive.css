@@ -41,6 +41,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .header .container .section-items .mobile-header-btn {
+    display: none;
+  }
   footer .container .footer-box .section-items {
     position: relative;
   }
@@ -225,13 +228,13 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .header .container .section-items .header-nav {
+    display: none;
+  }
   .case-studies-items {
     display: none !important;
   }
   .contact-illustration {
-    display: none;
-  }
-  .computer-header {
     display: none;
   }
   .lets-make-picture {
@@ -242,14 +245,22 @@
   }
 }
 @media screen and (max-width: 1199px) {
-  header {
-    display: none;
-  }
   .services .container .section-items .services-cards .cards-item .card-box .card-bottom .card-btn p {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
+  .hide {
+    transform: translateY(-128px);
+  }
+  .header {
+    height: 126px;
+  }
+  .header .container .section-items .header-nav .nav-items .nav-item .section-btn .header-btn {
+    height: 68px;
+    padding-right: 35px;
+    padding-right: 35px;
+  }
   footer {
     padding: 0;
     background: none;
@@ -270,10 +281,6 @@
   }
   footer .container .footer-box .section-items .footer-contact .footer-contact-form .section-btn {
     width: 249px;
-  }
-  header {
-    padding: 30px 0;
-    height: auto;
   }
   .welcome-section {
     padding-bottom: 70px;
@@ -405,14 +412,6 @@
   }
   .our-working-process .container .section-items .accordion .accordion-item .accordion-header .accordion-button span:last-child {
     font-size: 30px;
-  }
-  .small-header {
-    display: none;
-  }
-}
-@media screen and (min-width: 1400px) {
-  header {
-    padding-top: 60px;
   }
 }
 

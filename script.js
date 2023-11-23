@@ -1,4 +1,4 @@
-var caseSlider = tns({
+let caseSlider = tns({
     container: '#case-slider',
     items: 3,
     nav: false,
@@ -15,7 +15,7 @@ var caseSlider = tns({
     }
 });
 
-var testimonialsSlider = tns({
+let testimonialsSlider = tns({
     container: '#testimonials-slider',
     items: 5,
     speed: 500,
@@ -51,21 +51,22 @@ var testimonialsSlider = tns({
 
 let smallNav = document.getElementById('small-nav');
 
-let smallNavActivated = document.getElementById('activatedSmallNavBtn');
+let mobileHeaderBtn = document.getElementById('mobile-header-btn');
 
-smallNavActivated.addEventListener('click', () => {
+mobileHeaderBtn.addEventListener('click', (e) => {
 
-    if (smallNavActivated.classList.contains('activated-nav')) {
+    if (mobileHeaderBtn.classList.contains('activated-nav')) {
 
-        smallNavActivated.classList.add('remove-nav');
-        smallNavActivated.classList.remove('activated-nav');
+        mobileHeaderBtn.classList.add('remove-nav');
+        mobileHeaderBtn.classList.remove('activated-nav');
 
         document.body.classList.add('overflow-h');
 
         smallNav.style.right = '0'
-    } else if (smallNavActivated.classList.contains('remove-nav')) {
-        smallNavActivated.classList.add('activated-nav');
-        smallNavActivated.classList.remove('remove-nav');
+
+    } else if (mobileHeaderBtn.classList.contains('remove-nav')) {
+        mobileHeaderBtn.classList.remove('remove-nav');
+        mobileHeaderBtn.classList.add('activated-nav');
 
         document.body.classList.remove('overflow-h');
 
@@ -207,54 +208,23 @@ footerFormBtn.addEventListener('click', (e)=> {
 
 } )
 
+let header = document.getElementById('header')
+let scrollPosition = () => window.scrollY;
+let lastScroll = 0;
+let checkClassHide = () =>  header.classList.contains('hide');
 
-// const xhr = new XMLHttpRequest();
-//
-// xhr.open('POST', '/action.php');
-//
-// let formData = new FormData(event.target.closest('.contact-form'));
-//
-// xhr.send(formData);
-//
-// xhr.onload = (e) => {
-//
-//
-//     let json = xhr.response;
-//     let response = JSON.parse(json);
-//     console.log(response.responseText);
-//
-//
-//     if (xhr.status !== 200) {
-//         alert('Server Error');
-//     }
-//     else {
-//
-//
-//         if (response.status === true) {
-//
-//             let contactForm = document.querySelector('.contact-form');
-//             contactForm.reset();
-//
-//
-//             let phpBox = document.createElement('div');
-//             phpBox.classList.add('add-user-information');
-//
-//             phpBox.innerHTML = response.responseText;
-//
-//             let contactItem = document.querySelector('.contact-item');
-//
-//             contactItem.appendChild(phpBox);
-//
-//             setTimeout(() => {
-//                 phpBox.remove();
-//             }, 3000);
-//         }
-//
-//     }
-// }
+window.addEventListener('scroll', (e) => {
+    if (scrollPosition() > lastScroll && !checkClassHide() && scrollPosition() > 500) {
 
+        console.log('down')
+        header.classList.add('hide');
 
-
+    } else if (scrollPosition() < lastScroll && checkClassHide()) {
+        header.classList.remove('hide');
+        console.log('up')
+    }
+    lastScroll = scrollPosition();
+})
 
 
 
