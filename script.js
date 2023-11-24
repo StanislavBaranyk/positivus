@@ -212,11 +212,23 @@ let header = document.getElementById('header')
 let scrollPosition = () => window.scrollY;
 let lastScroll = 0;
 let checkClassHide = () =>  header.classList.contains('hide');
+let headerScroll = 102;
+
+let checkWindow = () => {
+    let windowW = window.innerWidth;
+    let breakPoint = 1200;
+
+    if (windowW >= breakPoint) {
+        headerScroll = 128;
+    }
+}
+
 
 window.addEventListener('scroll', (e) => {
     if (scrollPosition() > lastScroll && !checkClassHide()) {
+        header.classList.remove('show');
 
-        if (scrollPosition() > 102) {
+        if (scrollPosition() > headerScroll) {
 
             console.log('down')
             header.classList.add('hide');
@@ -225,11 +237,11 @@ window.addEventListener('scroll', (e) => {
 
     } else if (scrollPosition() < lastScroll && checkClassHide()) {
         header.classList.remove('hide');
-        console.log('up')
 
-        if (!header.classList.contains('hide')) {
-            header.style.position = 'fixed';
-        }
+        header.classList.add('show');
+
+        console.log('up');
+
     }
     lastScroll = scrollPosition();
 })
