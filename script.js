@@ -225,14 +225,19 @@ let checkWindow = () => {
 
 
 window.addEventListener('scroll', (e) => {
+
+
     if (scrollPosition() > lastScroll && !checkClassHide()) {
-        header.classList.remove('show');
 
-        if (scrollPosition() > headerScroll) {
+            if (scrollPosition() > headerScroll) {
 
-            console.log('down')
-            header.classList.add('hide');
-        }
+                console.log('down')
+                header.classList.add('hide');
+            }
+            else if (scrollPosition() < headerScroll) {
+                header.classList.remove('hide');
+                header.classList.remove('show')
+            }
 
 
     } else if (scrollPosition() < lastScroll && checkClassHide()) {
