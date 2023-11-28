@@ -100,8 +100,6 @@ body {
 }
 
 
-
-
 .header {
 
   width: 100%;
@@ -110,7 +108,7 @@ body {
   transition: 0.3s;
   background: #FFFFFF;
   position: absolute;
-  box-shadow:  0 3px 20px rgba(0,0,0,.08);;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, .08);;
   top: 0;
 
   .container {
@@ -120,7 +118,7 @@ body {
       justify-content: space-between;
       align-items: center;
 
-      .header-nav  {
+      .header-nav {
         .nav-items {
           list-style-type: none;
           padding: 0;
@@ -136,8 +134,9 @@ body {
               font-style: normal;
               font-weight: 400;
               line-height: 28px;
-              text-decoration: none ;
+              text-decoration: none;
             }
+
             .section-btn {
               .header-btn {
                 background: none;
@@ -173,13 +172,81 @@ header.show {
 
 header.hide {
   transform: translateY(-100%);
-  box-shadow: 0 3px 20px rgba(0,0,0,.08);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, .08);
 }
 
 
+.modal {
+
+  .modal-dialog {
+
+    .modal-content {
+
+      .modal-body {
+
+        .header-form {
+
+          .form-item {
+            @include flexCol;
+            gap: 10px;
+            margin-bottom: 25px;
+
+            .modal-header-name-input {
+              color: #000;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+            .modal-header-input {
+              width: 100%;
+              padding: 18px 20px;
+              border-radius: 14px;
+              border: 1px solid #000;
+              background: #FFF;
+              color: #898989;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+          }
 
 
 
+          .form-item:last-child {
+            margin-bottom: 0;
+            @include flexRow;
+            justify-content: right;
+
+            .send-modal-header-form {
+              display: flex;
+              padding: 20px 0;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              border-radius: 14px;
+              background: #191A23;
+              color: #FFF;
+              text-align: center;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%;
+              border: none;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+      .modal-footer {
+       justify-content: start;
+      }
+    }
+  }
+}
 
 
 .small-nav {

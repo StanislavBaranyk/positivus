@@ -124,10 +124,10 @@ contactBtn.addEventListener('click', event => {
                 contactInput.classList.add('border', 'border-danger');
 
                 setTimeout(() => {
-                    contactInput.classList.remove( 'border', 'border-danger');
+                    contactInput.classList.remove('border', 'border-danger');
                 }, 3000);
 
-            }  else if (event.target.closest('.contact-form').reportValidity()) {
+            } else if (event.target.closest('.contact-form').reportValidity()) {
 
 
                 xhr.open('POST', '/action.php');
@@ -174,7 +174,7 @@ contactBtn.addEventListener('click', event => {
 let footerFormEmail = document.getElementById('footer-email');
 let footerFormBtn = document.getElementById('footer-form-btn');
 
-footerFormBtn.addEventListener('click', (e)=> {
+footerFormBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
     const xhr = new XMLHttpRequest();
@@ -188,8 +188,7 @@ footerFormBtn.addEventListener('click', (e)=> {
         xhr.onload = (e) => {
             if (xhr.status !== 200) {
                 alert('Error Server')
-            }
-            else {
+            } else {
                 let response = JSON.parse(xhr.response);
                 console.log(response);
 
@@ -200,18 +199,17 @@ footerFormBtn.addEventListener('click', (e)=> {
         footerFormEmail.classList.add('border', 'border-danger');
 
         setTimeout(() => {
-            footerFormEmail.classList.remove( 'border', 'border-danger');
+            footerFormEmail.classList.remove('border', 'border-danger');
         }, 3000);
     }
 
 
-
-} )
+})
 
 let header = document.getElementById('header')
 let scrollPosition = () => window.scrollY;
 let lastScroll = 0;
-let checkClassHide = () =>  header.classList.contains('hide');
+let checkClassHide = () => header.classList.contains('hide');
 let headerScroll = 102;
 
 let checkWindow = () => {
@@ -229,15 +227,13 @@ window.addEventListener('scroll', (e) => {
 
     if (scrollPosition() > lastScroll && !checkClassHide()) {
 
-            if (scrollPosition() > headerScroll) {
+        if (scrollPosition() > headerScroll) {
 
-                console.log('down')
-                header.classList.add('hide');
-            }
-            else if (scrollPosition() < headerScroll) {
-                header.classList.remove('hide');
-                header.classList.remove('show')
-            }
+            header.classList.add('hide');
+        } else if (scrollPosition() < headerScroll) {
+            header.classList.remove('hide');
+            header.classList.remove('show')
+        }
 
 
     } else if (scrollPosition() < lastScroll && checkClassHide()) {
@@ -245,11 +241,102 @@ window.addEventListener('scroll', (e) => {
 
         header.classList.add('show');
 
-        console.log('up');
 
     }
     lastScroll = scrollPosition();
 })
+
+
+let sendModalHeaderForm = document.getElementById('send-modal-header-form');
+
+sendModalHeaderForm.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const xhr = new XMLHttpRequest();
+    let formData = new FormData(e.target.closest('.header-form'));
+
+    let modalHeaderInputs = document.querySelectorAll('.modal-header-input');
+
+    modalHeaderInputs.forEach((modalHeaderInput) => {
+
+
+        if (modalHeaderInput.checkValidity() !== true) {
+            modalHeaderInput.classList.add('border', 'border-danger');
+
+            setTimeout(() => {
+                modalHeaderInput.classList.remove('border', 'border-danger');
+            }, 3000);
+
+        } else if (e.target.closest('.header-form').reportValidity()) {
+
+
+            xhr.open('POST', '/action-header.php');
+            xhr.send(formData);
+
+            xhr.onload = (e) => {
+
+                let json = xhr.response;
+                let response = JSON.parse(json);
+                console.log(response);
+
+
+                if (xhr.status !== 200) {
+                    alert('Server Error');
+                } else {
+
+                    if (response.status === true) {
+
+                        let modalHeaderForm = document.querySelector('.header-form');
+                        modalHeaderForm.reset();
+
+                        let modalHeaderFooter = document.querySelector('.modal-footer')
+                        modalHeaderFooter.innerHTML = response.responseText;
+
+
+                        setTimeout(() => {
+                            modalHeaderFooter.innerHTML = '';
+                        }, 5000);
+                    }
+
+                }
+            }
+
+        }
+    })
+
+});
+
+
+// xhr.onload = (e) => {
+//
+//     let json = xhr.response;
+//     let response = JSON.parse(json);
+//     console.log(response.responseText);
+//
+//
+//     if (xhr.status !== 200) {
+//         alert('Server Error');
+//     } else {
+//
+//         if (response.status === true) {
+//
+//             let contactForm = document.querySelector('.contact-form');
+//             contactForm.reset();
+//
+//             let phpBox = document.createElement('div');
+//             phpBox.classList.add('add-user-information');
+//             phpBox.innerHTML = response.responseText;
+//
+//             let contactItem = document.querySelector('.contact-item');
+//             contactItem.appendChild(phpBox);
+//
+//             setTimeout(() => {
+//                 phpBox.remove();
+//             }, 5000);
+//         }
+//
+//     }
+// }
 
 
 

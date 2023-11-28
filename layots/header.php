@@ -95,7 +95,7 @@
                     ?>
                     <li class="nav-item">
                         <div class="section-btn">
-                            <button class="header-btn" id="header-btn" type="button">Request a quote</button>
+                            <button class="header-btn" data-bs-toggle="modal" data-bs-target="#header-modal" id="header-btn" type="button">Request a quote</button>
                         </div>
                     </li>
                 </ul>
@@ -113,6 +113,39 @@
         </div>
     </div>
 </header>
+
+<div class="modal fade" id="header-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="header-form" action="/action-header.php">
+                    <div class="form-item">
+                        <label for="modal-header-input-name" class="modal-header-name-input">Name</label>
+                        <input type="text" required placeholder="Name" id="modal-header-input-name" name="name" class="modal-header-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="modal-header-input-email" class="modal-header-name-input">Email</label>
+                        <input type="text" required placeholder="Email" id="modal-header-input-email" name="email" class="modal-header-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="modal-header-input-message" class="modal-header-name-input">Message</label>
+                        <textarea id="modal-header-input-message" name="message" required class="modal-header-input" placeholder="Message"></textarea>
+                    </div>
+                    <div class="section-btn form-item">
+                        <button type="submit" class="send-modal-header-form" id="send-modal-header-form">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php
 
